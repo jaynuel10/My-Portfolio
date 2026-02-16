@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100;
+  }
+}
+
+@layer components {
+  .container-section {
+    @apply max-w-6xl mx-auto px-6;
+  }
+
+  .section {
+    @apply py-24;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-semibold mb-12;
+  }
+
+  .card {
+    @apply p-6 rounded-2xl border border-gray-200 dark:border-gray-800 
+           hover:shadow-xl transition duration-300;
+  }
+
+  .card-hover {
+    @apply transform transition-transform duration-300 hover:scale-105 cursor-pointer;
+  }
+
+  .card-hover-subtle {
+    @apply transform transition-all duration-300 hover:scale-102 hover:shadow-lg;
+  }
+}
+
+@layer utilities {
+  .scale-102 {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.animate-zoom-in {
+  animation: zoomIn 0.3s ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
