@@ -39,13 +39,13 @@ export default function Hero() {
               </button>
 
               <button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => scrollToSection("resume")}
                 className="px-6 py-3 rounded-lg font-medium 
                            border border-gray-300 dark:border-gray-700
                            hover:bg-gray-100 dark:hover:bg-gray-900
                            transition cursor-pointer"
               >
-                Get In Touch
+                Download CV
               </button>
             </div>
           </div>

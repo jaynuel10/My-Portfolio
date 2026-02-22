@@ -79,11 +79,12 @@ export default function Footer({ isDark }) {
             <ul className="space-y-1 sm:space-y-2 text-sm">
               <li>
                 <a
-                  href="/JOHNSON C EMMANUEL_CV.pdf"
-                  download="JOHNSON C EMMANUEL_CV.pdf"
+                  id="resume"
+                  href="/JOHNSON C EMMANUEL CV.pdf"
+                  download="JOHNSON C EMMANUEL CV.pdf"
                   className="hover:text-blue-400 transition-colors py-1 block cursor-pointer"
                 >
-                  Resume
+                  Download CV
                 </a>
               </li>
               <li>
