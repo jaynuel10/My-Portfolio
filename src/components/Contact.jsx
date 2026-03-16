@@ -7,7 +7,7 @@ import {
   Github,
   Twitter,
   Facebook,
-  MessageCircle,
+  MessageSquare,
   Check,
   AlertCircle,
 } from "lucide-react";
@@ -114,8 +114,8 @@ export default function Contact({ isDark }) {
     },
     {
       name: "WhatsApp",
-      icon: MessageCircle,
-      url: "#",
+      icon: MessageSquare,
+      url: "https://wa.me/2349032224305",
       color: "hover:text-green-500",
     },
     {
@@ -281,8 +281,8 @@ export default function Contact({ isDark }) {
                   title={social.name}
                   className={`p-3 sm:p-4 rounded-full transition-all duration-300 min-h-12 min-w-12 flex items-center justify-center transform hover:scale-125 hover:shadow-lg cursor-pointer ${
                     isDark
-                      ? "bg-gray-700 text-gray-300 hover:bg-blue-500 hover:text-white"
-                      : "bg-gray-100 text-gray-600 hover:bg-blue-500 hover:text-white"
+                      ? `bg-gray-700 text-gray-300 ${social.color}`
+                      : `bg-gray-100 text-gray-600 ${social.color}`
                   }`}
                 >
                   <Icon size={28} />

@@ -80,8 +80,8 @@ export default function Footer({ isDark }) {
               <li>
                 <a
                   id="resume"
-                  href="/JOHNSON C EMMANUEL CV.pdf"
-                  download="JOHNSON C EMMANUEL CV.pdf"
+                  href="/JOHNSON C EMMANUEL_CV.pdf"
+                  download="JOHNSON C EMMANUEL_CV.pdf"
                   className="hover:text-blue-400 transition-colors py-1 block cursor-pointer"
                 >
                   Download CV

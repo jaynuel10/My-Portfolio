@@ -17,11 +17,11 @@ export default function Projects() {
       link: "https://ulooma1.vercel.app",
     },
     {
-      name: "E-commerce Clone Website",
+      name: "TradeConnect — Artisan Marketplace Platform",
       description:
-        "Developed a React-based landing page using reusable components, props, and state, improving code maintainability and reinforcing best practices in modern frontend development.",
-      technologies: ["React", "Tailwind CSS"],
-      link: "https://tryclone-gamma.vercel.app",
+        "Architected a multi-page fully componentized React application - artisan marketplace SPA - solving trust and discovery for skilled tradespeople in emerging markets, with a focus on clean component architecture and real-world API integration..",
+      technologies: ["Geolocation API, REST APIs, React", "Tailwind CSS"],
+      link: "https://trade-connect-artisan-website.vercel.app/",
     },
     {
       name: "E-Commerce Web Application",

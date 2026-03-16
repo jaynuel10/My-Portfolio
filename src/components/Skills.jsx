@@ -13,7 +13,7 @@ export default function Skills() {
       category: "Styling",
       items: [
         { name: "Tailwind CSS", proficiency: 90 },
-        { name: "CSS Modules", proficiency: 85 },
+        { name: "CSS Modules", proficiency: 90 },
         { name: "Responsive Design", proficiency: 92 },
       ],
     },
@@ -23,14 +23,14 @@ export default function Skills() {
         { name: "Git", proficiency: 88 },
         { name: "GitHub", proficiency: 88 },
         { name: "VS Code", proficiency: 95 },
-        { name: "npm", proficiency: 85 },
+        { name: "REST APIs", proficiency: 90 },
       ],
     },
     {
       category: "Other Skills",
       items: [
         { name: "Problem Solving", proficiency: 90 },
-        { name: "Team Collaboration", proficiency: 88 },
+        { name: "Team Collaboration", proficiency: 92 },
         { name: "Responsive Web Design", proficiency: 92 },
       ],
     },
@@ -41,8 +41,8 @@ export default function Skills() {
     { skill: "JavaScript", level: "Advanced", percentage: 92 },
     { skill: "Tailwind CSS", level: "Advanced", percentage: 90 },
     { skill: "HTML & CSS", level: "Advanced", percentage: 93 },
-    { skill: "Responsive Design", level: "Advanced", percentage: 92 },
-    { skill: "Git & GitHub", level: "Intermediate", percentage: 75 },
+    { skill: "REST APIs", level: "Advanced", percentage: 90 },
+    { skill: "Git & GitHub", level: "Intermediate", percentage: 88 },
   ];
 
   // Circular Progress Component
