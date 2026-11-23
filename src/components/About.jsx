@@ -10,43 +10,41 @@ export default function About({ isDark }) {
         </h2>
 
         <div
-          className={`${isDark ? "bg-gray-700" : "bg-gray-50"} rounded-lg p-6 sm:p-8 md:p-12 transition-all duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer`}
+          className={`${isDark ? "bg-gray-700" : "bg-gray-50"} rounded-lg p-6 sm:p-8 md:p-12 transition-all duration-300 hover:shadow-xl`}
         >
           <p
             className={`text-base sm:text-lg leading-relaxed mb-4 sm:mb-6 ${isDark ? "text-gray-200" : "text-gray-700"}`}
           >
-            I am a frontend developer focused on building clean, scalable, and
-            user-centered web applications using React, JavaScript, and Tailwind
-            CSS. My work is driven by a strong emphasis on performance,
-            accessibility, and maintainable component architecture.
+            I am a MERN Stack Developer passionate about building modern,
+            responsive, and user-focused web applications. I work with
+            technologies such as MongoDB, Express.js, React, and Node.js to
+            develop functional and intuitive digital experiences.
           </p>
 
           <p
             className={`text-base sm:text-lg leading-relaxed mb-6 sm:mb-8 ${isDark ? "text-gray-200" : "text-gray-700"}`}
           >
-            I approach development with both a technical and product mindset —
-            ensuring that every interface is not only visually polished but also
-            intuitive and efficient. From structuring reusable components to
-            optimizing rendering performance, I strive to deliver solutions that
-            balance functionality, clarity, and long-term scalability.
+            My development experience spans both frontend and backend
+            engineering, from creating reusable React components and responsive
+            interfaces to building RESTful APIs, implementing authentication,
+            managing databases, and handling server-side logic. I also value
+            clean code, maintainable architecture, security, and performance.
           </p>
 
           <p
             className={`text-base sm:text-lg leading-relaxed mb-6 sm:mb-8 ${isDark ? "text-gray-200" : "text-gray-700"}`}
           >
-            Beyond technical execution, I value collaboration, clear
-            communication, and continuous improvement. I am constantly expanding
-            my knowledge of modern frontend tools, best practices, and evolving
-            industry standards to remain adaptable and effective in fast-paced
-            development environments.
+            I enjoy turning ideas into practical applications and continuously
+            challenging myself with projects that expand my technical skills.
           </p>
 
           <p
             className={`text-base sm:text-lg leading-relaxed ${isDark ? "text-gray-200" : "text-gray-700"}`}
           >
-            I am eager to contribute to teams building meaningful digital
-            products and to grow within an environment that values technical
-            excellence, innovation, and measurable impact.
+            I am committed to continuous learning, improving my problem-solving
+            abilities, and contributing to teams that build meaningful digital
+            products. I look forward to growing as a developer while creating
+            solutions that make a real difference.
           </p>
         </div>
       </div>

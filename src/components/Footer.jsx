@@ -17,8 +17,8 @@ export default function Footer({ isDark }) {
               Portfolio
             </h3>
             <p className="text-sm text-gray-400">
-              Front-End Developer creating beautiful, responsive web
-              applications
+              MERN Stack Developer, building modern, responsive, and
+              user-focused web applications.
             </p>
           </div>
 
@@ -80,8 +80,8 @@ export default function Footer({ isDark }) {
               <li>
                 <a
                   id="resume"
-                  href="/JOHNSON C EMMANUEL_CV.pdf"
-                  download="JOHNSON C EMMANUEL_CV.pdf"
+                  href="/JOHNSON C EMMANUEL_CV_2026.docx"
+                  download="JOHNSON C EMMANUEL_CV_2026.docx"
                   className="hover:text-blue-400 transition-colors py-1 block cursor-pointer"
                 >
                   Download CV

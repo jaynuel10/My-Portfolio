@@ -25,7 +25,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-300 mb-4">
-              Frontend Developer
+              MERN Stack Developer
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -63,7 +63,7 @@ export default function Hero() {
                             dark:border-gray-800 shadow-2xl animate-float"
             >
               <img
-                src="/image/profile1.jpg"
+                src="/image/ProfilePicture.jpeg"
                 alt="johnson's profile"
                 className="w-72 h-72 md:w-80 md:h-80 object-cover rounded-2xl"
               />

@@ -3,12 +3,22 @@ import { ExternalLink, Github } from "lucide-react";
 export default function Projects() {
   const projects = [
     {
-      name: "Client's Portfolio Website",
+      name: "TaskFlow — Task Management Application",
       description:
-        "Designed and developed a responsive portfolio website for a Relationship Life Coach to establish a strong online presence and build client trust. The platform highlights coaching services, testimonials, and booking information, providing a clear and welcoming user experience that encourages potential clients to connect directly.",
-      technologies: ["HTML", "Tailwind CSS", "JavaScript"],
-      link: "https://pst-kristie.vercel.app",
+        "Building a full-stack task management application with secure authentication, email verification, password recovery, role-based access control, and comprehensive task management. The backend includes RESTful APIs, analytics, admin functionality, and audit logging. Frontend development is currently in progress.",
+      technologies: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "JWT",
+        "Tailwind CSS",
+      ],
+      github: "https://github.com/jaynuel10/TaskFlow",
+      status: "In Progress",
     },
+
     {
       name: "Collaborative Property Listing Platform",
       description:
@@ -16,17 +26,11 @@ export default function Projects() {
       technologies: ["React", "JavaScript", "Tailwind CSS", "Git"],
       link: "https://ulooma1.vercel.app",
     },
-    {
-      name: "TradeConnect — Artisan Marketplace Platform",
-      description:
-        "Architected a multi-page fully componentized React application - artisan marketplace SPA - solving trust and discovery for skilled tradespeople in emerging markets, with a focus on clean component architecture and real-world API integration..",
-      technologies: ["Geolocation API, REST APIs, React", "Tailwind CSS"],
-      link: "https://trade-connect-artisan-website.vercel.app/",
-    },
+
     {
       name: "E-Commerce Web Application",
       description:
-        "Recreated Crunchies website using semantic HTML and Tailwind CSS, applying Flexbox and CSS Grid to achieve clean structure, responsive layout, and improved readability.",
+        "Recreated the Crunchies website using semantic HTML and CSS, applying Flexbox and CSS Grid to achieve a clean structure, responsive layout, and improved readability.",
       technologies: ["HTML", "CSS"],
       link: "https://crunches-sigma.vercel.app/",
     },
@@ -44,8 +48,9 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-lg">
-            A selection of projects demonstrating technical proficiency,
-            scalability, and user-centered design principles.
+            A selection of projects showcasing my experience in frontend
+            development, backend engineering, and building user-focused
+            applications.
           </p>
         </div>
 
@@ -54,19 +59,27 @@ export default function Projects() {
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="group bg-white dark:bg-gray-950 
-                         rounded-2xl p-8 
+              className="group bg-white dark:bg-gray-950
+                         rounded-2xl p-8
                          border border-gray-200 dark:border-gray-800
                          transition-all duration-300
-                         hover:shadow-xl hover:-translate-y-1 cursor-pointer"
+                         hover:shadow-xl hover:-translate-y-1"
             >
-              <h3 className="text-xl font-semibold mb-4">{project.name}</h3>
+              <div className="flex items-start justify-between gap-3 mb-4">
+                <h3 className="text-xl font-semibold">{project.name}</h3>
+
+                {project.status && (
+                  <span className="shrink-0 px-3 py-1 text-xs font-medium rounded-full bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300">
+                    {project.status}
+                  </span>
+                )}
+              </div>
 
               <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
                 {project.description}
               </p>
 
-              {/* Tech Stack */}
+              {/* Technology Stack */}
               <div className="flex flex-wrap gap-2 mb-8">
                 {project.technologies.map((tech, index) => (
                   <span
@@ -81,17 +94,31 @@ export default function Projects() {
                 ))}
               </div>
 
-              {/* Links */}
+              {/* Project Links */}
               <div className="flex items-center gap-6 pt-6 border-t border-gray-200 dark:border-gray-800">
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 font-medium hover:opacity-80 transition cursor-pointer"
-                >
-                  <ExternalLink size={18} />
-                  Live Demo
-                </a>
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 font-medium hover:opacity-80 transition"
+                  >
+                    <ExternalLink size={18} />
+                    Live Demo
+                  </a>
+                )}
+
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 font-medium hover:opacity-80 transition"
+                  >
+                    <Github size={18} />
+                    GitHub
+                  </a>
+                )}
               </div>
             </div>
           ))}
